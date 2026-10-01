@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="360 Decor — decoração de apartamentos prontos para morar ou rentabilizar. Do diagnóstico do espaço à entrega da unidade decorada.">
+    <title>360 Decor - Seu apartamento pronto para morar ou rentabilizar, em 60 dias úteis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+    <!-- ---------- NAVBAR ---------- -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="#inicio" class="brand">360 Decor<span class="brand-dot">.</span></a>
+
+            <nav class="nav-links" id="navLinks" aria-label="Menu principal">
+                <a href="#processo">Processo</a>
+                <a href="#portfolio">Portfólio</a>
+                <a href="#contato">Contato</a>
+                <a href="#contato" class="btn btn-primary nav-cta">Falar com um Consultor</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ---------- HERO ---------- -->
+        <section class="hero" id="inicio">
+            <!-- VÍDEO: coloque o arquivo em img/hero-video.mp4 (e uma capa img/hero-poster.jpg).
+                 Enquanto os arquivos não existirem, o hero mantém o fundo em gradiente. -->
+            <div class="hero-video" aria-hidden="true">
+                <video autoplay muted loop playsinline preload="metadata" poster="img/hero-poster.jpg">
+                    <source src="img/hero-video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <p class="eyebrow reveal">Decoração de apartamentos · São Paulo</p>
+                <h1 class="reveal">Seu apartamento pronto para <em>morar</em> ou <em>rentabilizar</em>, em <em>*60 dias úteis</em>.</h1>
+                <h2><span style="font-size: 65%;">*após instalação de energia elética, aprovação da ART e documentação entregue.</span></h2>
+                <p class="hero-lead reveal">Potencialize seu investimento com decoração completa — do projeto à entrega da unidade pronta para locação por temporada ou moradia.</p>
+                <div class="hero-actions reveal">
+                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
+                    <a href="#contato" class="btn btn-ghost">Falar com um Consultor</a>
+                </div>
+            </div>
+            <a href="#processo" class="hero-scroll" aria-label="Ir para a seção Processo"><span></span></a>
+        </section>
+
+        <!-- ---------- FILOSOFIA ---------- -->
+        <section class="statement">
+            <div class="container statement-inner">
+                <p class="section-tag reveal">Nossa filosofia</p>
+                <p class="statement-text reveal">Do diagnóstico de espaço à entrega da unidade pronta para gerar moradia ou renda — cuidamos de cada etapa para que seu investimento tenha o <em>melhor retorno possível</em>.</p>
+            </div>
+        </section>
+
+        <!-- ---------- PROCESSO ---------- -->
+        <section class="process" id="processo">
+            <div class="container">
+                <header class="section-head section-head--center reveal">
+                    <p class="section-tag">Como funciona</p>
+                    <h2>O processo 360 Decor</h2>
+                </header>
+
+                <ol class="steps">
+                    <li class="step reveal">
+                        <span class="step-num">01</span>
+                        <h3>Diagnóstico de Espaço</h3>
+                        <p>Avaliação técnica da planta do imóvel para identificar o melhor layout e estratégia de decoração.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">02</span>
+                        <h3>Orçamento e Curadoria</h3>
+                        <p>Orçamento inicial, seleção de materiais e acabamentos conforme sua identidade, apresentação do escopo do projeto, aprovação e contrato.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">03</span>
+                        <h3>Execução Completa</h3>
+                        <p>Gestão da obra desde o contra-piso até a entrega final, com cronograma e controle de custos.</p>
+                    </li>
+                    <li class="step reveal">
+                        <span class="step-num">04</span>
+                        <h3>Entrega do Imóvel Pronto</h3>
+                        <p>Imóvel pronto para gerar renda ou moradia: mobiliado, decorado e com estratégia de locação definida.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ---------- PORTFÓLIO ---------- -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <header class="section-head section-head--center reveal">
+                    <p class="section-tag">Portfólio</p>
+                    <h2>Projetos Entregues</h2>
+                </header>
+
+                <div class="portfolio-grid">
+                    <article class="project reveal">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="img/projeto-1/foto-1.jpg" alt="Estúdio 35m² - Perdizes, foto 1" loading="lazy">
+                                <img src="img/projeto-1/foto-2.jpg" alt="Estúdio 35m² - Perdizes, foto 2" loading="lazy">
+                            </div>
+                            <div class="carousel-edges" aria-hidden="true"></div>
+                            <button class="carousel-arrow prev" type="button" aria-label="Foto anterior">&#8249;</button>
+                            <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Estúdio 35m² — Perdizes</h3>
+                            <p>Decoração minimalista para investidor X</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="img/projeto-2/foto-1.jpg" alt="Studio 23m² - Campo Belo, foto 1" loading="lazy">
+                                <img src="img/projeto-2/foto-2.jpg" alt="Studio 23m² - Campo Belo, foto 2" loading="lazy">
+                                <img src="img/projeto-2/foto-3.jpg" alt="Studio 23m² - Campo Belo, foto 3" loading="lazy">
+                            </div>
+                            <div class="carousel-edges" aria-hidden="true"></div>
+                            <button class="carousel-arrow prev" type="button" aria-label="Foto anterior">&#8249;</button>
+                            <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Studio 23m² — Campo Belo</h3>
+                            <p>Conceito contemporâneo para rentabilidade</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="img/projeto-3/foto-1.jpg" alt="Estúdio 20m² - Paraíso, foto 1" loading="lazy">
+                                <img src="img/projeto-3/foto-2.jpg" alt="Estúdio 20m² - Paraíso, foto 2" loading="lazy">
+                                <img src="img/projeto-3/foto-3.jpg" alt="Estúdio 20m² - Paraíso, foto 3" loading="lazy">
+                                <img src="img/projeto-3/foto-4.jpg" alt="Estúdio 20m² - Paraíso, foto 4" loading="lazy">
+                                <img src="img/projeto-3/foto-5.jpg" alt="Estúdio 20m² - Paraíso, foto 5" loading="lazy">
+                            </div>
+                            <div class="carousel-edges" aria-hidden="true"></div>
+                            <button class="carousel-arrow prev" type="button" aria-label="Foto anterior">&#8249;</button>
+                            <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Estúdio 20m² — Paraíso</h3>
+                            <p>Otimização do seu espaço com estilo acolhedor</p>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="carousel" data-carousel>
+                            <div class="carousel-track">
+                                <img src="img/projeto-4/foto-1.jpg" alt="Studio 24m² - Pinheiros, foto 1" loading="lazy">
+                                <img src="img/projeto-4/foto-2.jpg" alt="Studio 24m² - Pinheiros, foto 2" loading="lazy">
+                            </div>
+                            <div class="carousel-edges" aria-hidden="true"></div>
+                            <button class="carousel-arrow prev" type="button" aria-label="Foto anterior">&#8249;</button>
+                            <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
+                        </div>
+                        <div class="project-info">
+                            <h3>Studio 24m² — Pinheiros</h3>
+                            <p>Design e funcionalidade para locação por temporada</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- CONTATO ---------- -->
+        <section class="contact" id="contato">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <p class="section-tag">Contato</p>
+                    <h2>Vamos conversar?</h2>
+                    <p class="contact-lead">Preencha o formulário ou fale conosco pelo WhatsApp para conhecer mais sobre nossos serviços.</p>
+
+                    <div class="contact-actions">
+                        <a href="https://wa.me/5511999998888" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://www.instagram.com/360decor_/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a>
+                    </div>
+                </div>
+
+                <form class="contact-form reveal" action="https://formsubmit.co/gustavo@360decor.com.br" method="POST">
+                    <div class="field">
+                        <label for="name">Seu nome</label>
+                        <input id="name" type="text" name="name" placeholder="Como podemos te chamar?" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Seu e-mail</label>
+                        <input id="email" type="email" name="email" placeholder="voce@email.com" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="brand">360 Decor<span class="brand-dot">.</span></a>
+                    <p>Decoração de apartamentos — do projeto à entrega da unidade PRONTA.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#processo">Processo</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li><a href="https://wa.me/5511999998888" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li><a href="https://www.instagram.com/360decor_/" target="_blank" rel="noopener">
+                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+                            </svg>
+                            Instagram
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> 360 Decor. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
