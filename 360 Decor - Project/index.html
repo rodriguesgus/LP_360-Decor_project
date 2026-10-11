@@ -109,16 +109,19 @@
                     <article class="project reveal">
                         <div class="carousel" data-carousel>
                             <div class="carousel-track">
-                                <img src="img/projeto-1/foto-1.jpg" alt="Estúdio 35m² - Perdizes, foto 1" loading="lazy">
-                                <img src="img/projeto-1/foto-2.jpg" alt="Estúdio 35m² - Perdizes, foto 2" loading="lazy">
+                                <img src="img/projeto-1/foto-1.jpg" alt="Estúdio 44m² - Jeronimo 155, foto 1" loading="lazy">
+                                <img src="img/projeto-1/foto-2.jpg" alt="Estúdio 44m² - Jeronimo 155, foto 2" loading="lazy">
+                                <img src="img/projeto-1/foto-3.jpg" alt="Estúdio 44m² - Jeronimo 155, foto 3" loading="lazy">
+                                <img src="img/projeto-1/foto-4.jpg" alt="Estúdio 44m² - Jeronimo 155, foto 4" loading="lazy">
+                                <img src="img/projeto-1/foto-5.jpg" alt="Estúdio 44m² - Jeronimo 155, foto 5" loading="lazy">
                             </div>
                             <div class="carousel-edges" aria-hidden="true"></div>
                             <button class="carousel-arrow prev" type="button" aria-label="Foto anterior">&#8249;</button>
                             <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
                         </div>
                         <div class="project-info">
-                            <h3>Estúdio 35m² — Perdizes</h3>
-                            <p>Decoração minimalista para investidor X</p>
+                            <h3>Estúdio 44m² — Jeronimo 155 - Itaim Bibi</h3>
+                            <p>Sofisticação e minimalismo para o investidor</p>
                         </div>
                     </article>
 
@@ -134,7 +137,7 @@
                             <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
                         </div>
                         <div class="project-info">
-                            <h3>Studio 23m² — Campo Belo</h3>
+                            <h3>Studio 26m² — Campo Belo</h3>
                             <p>Conceito contemporâneo para rentabilidade</p>
                         </div>
                     </article>
@@ -153,8 +156,8 @@
                             <button class="carousel-arrow next" type="button" aria-label="Próxima foto">&#8250;</button>
                         </div>
                         <div class="project-info">
-                            <h3>Estúdio 20m² — Paraíso</h3>
-                            <p>Otimização do seu espaço com estilo acolhedor</p>
+                            <h3>Estúdio 26m² - Leaf Loefgren — Vila Mariana</h3>
+                            <p>Otimização do seu espaço com conforto e estilo</p>
                         </div>
                     </article>
 
@@ -186,25 +189,44 @@
                     <p class="contact-lead">Preencha o formulário ou fale conosco pelo WhatsApp para conhecer mais sobre nossos serviços.</p>
 
                     <div class="contact-actions">
-                        <a href="https://wa.me/5511999998888" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
+                        <a href="https://wa.me/5511988686269" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp</a>
                         <a href="https://www.instagram.com/360decor_/" target="_blank" rel="noopener" class="btn btn-ghost">Instagram</a>
                     </div>
                 </div>
 
-                <form class="contact-form reveal" action="https://formsubmit.co/gustavo@360decor.com.br" method="POST">
+                <form class="contact-form reveal" id="contactForm" novalidate>
                     <div class="field">
-                        <label for="name">Seu nome</label>
-                        <input id="name" type="text" name="name" placeholder="Como podemos te chamar?" required>
+                        <label for="name">Nome</label>
+                        <input id="name" name="nome" type="text" placeholder="Seu nome completo" required>
                     </div>
                     <div class="field">
-                        <label for="email">Seu e-mail</label>
-                        <input id="email" type="email" name="email" placeholder="voce@email.com" required>
+                        <label for="phone">Telefone</label>
+                        <input id="phone" name="telefone" type="tel" placeholder="(11) 99999-9999" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="area">Metragem (m²)</label>
+                            <input id="area" name="metragem" type="number" min="1" placeholder="Ex.: 44" required>
+                        </div>
+                        <div class="field">
+                            <label for="purpose">Finalidade</label>
+                            <select id="purpose" name="finalidade" required>
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="Locação">Locação</option>
+                                <option value="Moradia">Moradia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="unit">Prédio / Número da unidade</label>
+                        <input id="unit" name="predio" type="text" placeholder="Ex.: Jeronimo 155, apto 92" required>
                     </div>
                     <div class="field">
                         <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                        <textarea id="message" name="mensagem" rows="5" placeholder="Conte um pouco sobre o que você precisa"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+                    <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Enviar Mensagem</button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>
@@ -216,7 +238,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#inicio" class="brand">360 Decor<span class="brand-dot">.</span></a>
-                    <p>Decoração de apartamentos — do projeto à entrega da unidade PRONTA.</p>
+                    <p>Decoração de apartamentos — do projeto à entrega da unidade pronta.</p>
                 </div>
                 <div class="footer-col">
                     <h3>Navegação</h3>
@@ -229,7 +251,7 @@
                 <div class="footer-col">
                     <h3>Redes Sociais</h3>
                     <ul>
-                        <li><a href="https://wa.me/5511999998888" target="_blank" rel="noopener">WhatsApp</a></li>
+                        <li><a href="https://wa.me/5511988686269" target="_blank" rel="noopener">WhatsApp</a></li>
                         <li><a href="https://www.instagram.com/360decor_/" target="_blank" rel="noopener">
                             <svg class="icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <rect x="2" y="2" width="20" height="20" rx="5"></rect>

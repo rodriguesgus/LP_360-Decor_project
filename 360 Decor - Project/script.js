@@ -97,4 +97,59 @@
 
     /* ---------- ANO NO FOOTER ---------- */
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    /* ---------- FORMULÁRIO DE CONTATO → PIPEFY ---------- */
+    const form = document.getElementById("contactForm");
+    if (form) {
+        const submitBtn = document.getElementById("submitBtn");
+        const status = document.getElementById("formStatus");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const data = {
+                nome: form.nome.value.trim(),
+                telefone: form.telefone.value.trim(),
+                metragem: form.metragem.value.trim(),
+                finalidade: form.finalidade.value,
+                predio: form.predio.value.trim(),
+                mensagem: form.mensagem.value.trim()
+            };
+
+            if (!data.nome || !data.telefone || !data.metragem || !data.finalidade || !data.predio) {
+                status.textContent = "Preencha todos os campos obrigatórios.";
+                status.className = "form-status error";
+                return;
+            }
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Enviando...";
+            status.textContent = "";
+            status.className = "form-status";
+
+            try {
+                const res = await fetch("/api/contato", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data)
+                });
+
+                const json = await res.json();
+
+                if (!res.ok || !json.ok) {
+                    throw new Error(json.error || "Erro ao enviar.");
+                }
+
+                status.textContent = "Mensagem enviada com sucesso! Em breve entraremos em contato.";
+                status.className = "form-status success";
+                form.reset();
+            } catch (err) {
+                status.textContent = "Não foi possível enviar. Tente novamente ou fale pelo WhatsApp.";
+                status.className = "form-status error";
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Enviar Mensagem";
+            }
+        });
+    }
 })();

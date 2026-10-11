@@ -1,0 +1,11 @@
+# Variáveis de ambiente (nunca committar o token)
+.env
+.env.local
+
+# Node
+node_modules/
+
+# Vercel
+.vercel/
+
+.vercel
